@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/earthquake_item_padding_vertical"
+    android:paddingEnd="@dimen/earthquake_item_padding_horizontal"
+    android:paddingStart="@dimen/earthquake_item_padding_horizontal"
+    android:paddingTop="@dimen/earthquake_item_padding_vertical">
+
+    <TextView
+        android:id="@+id/magnitude"
+        android:layout_width="@dimen/magnitude_circle_diameter"
+        android:layout_height="@dimen/magnitude_circle_diameter"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/magnitude_circle"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/white"
+        tools:text="@string/tools_magnitude_text" />
+
+    <LinearLayout
+        android:id="@+id/place_linear_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/location_offset"
+            style="@style/earthquake_place_text_view"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:textSize="12sp"
+            tools:text="@string/tools_location_offset_text" />
+
+        <TextView
+            android:id="@+id/primary_location"
+            style="@style/earthquake_place_text_view"
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/textColorEarthquakeLocation"
+            tools:text="@string/tools_primary_location_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/time_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/earthquake_item_text_view"
+            tools:text="@string/tools_date_text" />
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/earthquake_item_text_view"
+            tools:text="@string/tools_time_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

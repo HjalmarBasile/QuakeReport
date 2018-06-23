@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="earthquake_item_height">48dp</dimen>
+    <dimen name="earthquake_item_padding_horizontal">16dp</dimen>
+    <dimen name="earthquake_item_padding_vertical">4dp</dimen>
+    <dimen name="magnitude_circle_diameter">40dp</dimen>
+</resources>
