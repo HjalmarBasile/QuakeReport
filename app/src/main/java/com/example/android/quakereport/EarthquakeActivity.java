@@ -136,6 +136,11 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderManag
                 getString(R.string.settings_min_magnitude_key),
                 getString(R.string.settings_min_magnitude_default));
 
+        String orderBy = sharedPrefs.getString(
+                getString(R.string.settings_order_by_key),
+                getString(R.string.settings_order_by_default)
+        );
+
         // parse breaks apart the URI string that's passed into its parameter
         Uri baseUri = Uri.parse(USGS_REQUEST_URL);
 
@@ -147,7 +152,7 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderManag
         uriBuilder.appendQueryParameter("eventtype", "earthquake");
         uriBuilder.appendQueryParameter("minmagnitude", minMagnitude);
         uriBuilder.appendQueryParameter("limit", "50");
-        uriBuilder.appendQueryParameter("orderby", "time");
+        uriBuilder.appendQueryParameter("orderby", orderBy);
         
         // Create a new loader for the given built URL
         return new EarthquakeLoader(this, uriBuilder.toString());
