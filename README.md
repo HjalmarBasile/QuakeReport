@@ -6,7 +6,7 @@ from the U.S. Geological Survey (USGS) organization.
 
 This is my version of the app used in the Udacity course "Android Basics: Networking (by Google)"
 
-The course introduces the concepts of JSON parsing, Android Shape Drawables, HTTP networking, REST API, HTTP requests, Android Permissions, Threads & Parallelism, AsyncTask, Generics, Loaders, Empty View for AdapterView, ProgressBar.
+The course introduces the concepts of JSON parsing, Android Shape Drawables, HTTP networking, REST API, HTTP requests, Uri.Builder, Android Permissions, Threads & Parallelism, AsyncTask, Generics, Loaders, Empty View for AdapterView, ProgressBar, SharedPreferences, PreferenceManager, PreferenceFragment, Menu, PreferenceScreen, EditTextPreference, ListPreference, String Array resources, Preference.OnPreferenceChangeListener, Preference summary.
 
 More info on the USGS Earthquake API available at:
 https://earthquake.usgs.gov/fdsnws/event/1/
